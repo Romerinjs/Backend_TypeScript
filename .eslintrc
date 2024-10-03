@@ -24,7 +24,8 @@
       "max-len": "off",
       "no-console": "off",
       "@typescript-eslint/no-explicit-any": "off",
-      "quotes": ["error", "single"]
+      "quotes": ["error", "single"],
+      "@typescript-eslint/no-inferrable-types": "off"
     }
   }
   

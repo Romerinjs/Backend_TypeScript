@@ -7,9 +7,9 @@ auxNumber.push(16);
 auxNumber.push(17);
 console.log('point 1 push');
 console.log(auxNumber, '\n');
-auxNumber.pop();
+const pop1 = auxNumber.pop();
 console.log('point 2 pop');
-console.log(auxNumber, '\n');
+console.log(pop1, '\n');
 const indicao = auxNumber.indexOf(1);
 const indicao2 = auxNumber.indexOf(4);
 const indicao3 = auxNumber.indexOf(7);
@@ -73,13 +73,16 @@ const arrayProducts = [
 ];
 console.log(arrayProducts, '\n');
 const priceP = arrayProducts.filter((product) => product.price > 900);
+const prodOv900 = [];
 for (let i = 0; i < arrayProducts.length; i++) {
     if (arrayProducts[i].price > 900) {
-        console.log(arrayProducts[i], 'cicle for', '\n');
+        prodOv900.push(arrayProducts[i]);
     }
 }
 console.log('point 1 filter func');
 console.log(priceP, '\n');
+console.log('point 1 for');
+console.log(prodOv900, '\n');
 const priceD = arrayProducts.find((product) => product.priceDiscount > 500);
 console.log('point 2 find');
 console.log(priceD, '\n');

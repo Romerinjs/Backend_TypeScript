@@ -56,8 +56,6 @@ console.log(index1, indexTwo, index3, '\n');
 //
 console.log('Exercise 3');
 // point 3
-// cambiar al ESLint Trc
-// eslint-disable-next-line @typescript-eslint/no-inferrable-types
 const message: string = 'Welcome to ITP';
 console.log(message);
 // 1 dividir la cadena en un array de palabras donde el separador sea el espacio ' ' por split
@@ -73,7 +71,6 @@ console.log(joinMessage, '\n');
 
 // point 4
 console.log('Exercise 4');
-// eslint-disable-next-line @typescript-eslint/no-inferrable-types
 const nameList: string = 'michael, Anderson, Yadir, Kevin, Emerson';
 console.log(nameList);
 // 1 dividir la cadena en un array de palabras donde el separador sea las comas ',' por split
@@ -106,13 +103,18 @@ const arrayProducts: any[] = [
 console.log(arrayProducts, '\n');
 // 1 vamos a filtrar en una constante donde price sea mayor que 900 por medio de filter y por medio de un for
 const priceP = arrayProducts.filter((product) => product.price > 900);
-for (let i = 0; i < arrayProducts.length; i++) { // crear una const como array vacio y hacer un push
+const prodOv900 = []; // Array vacío para almacenar los productos filtrados
+
+for (let i = 0; i < arrayProducts.length; i++) {
   if (arrayProducts[i].price > 900) {
-    console.log(arrayProducts[i], 'cicle for', '\n');
+    prodOv900.push(arrayProducts[i]); // Agregar producto al array si cumple la condición
   }
 }
+
 console.log('point 1 filter func');
 console.log(priceP, '\n');
+console.log('point 1 for');
+console.log(prodOv900, '\n');
 
 // 2 encontrar el primer objeto del array donde el priceDiscount sea mayor que 500 por medio del metodo find
 const priceD = arrayProducts.find((product) => product.priceDiscount > 500);
