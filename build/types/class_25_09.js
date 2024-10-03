@@ -8,41 +8,42 @@ const coins = ['USD', 'EUR', 'COP'];
 const pOne = ['any', 1, true, { id: 1, name: 'John Doe' }];
 const coin = [
     {
-        "id": 1,
-        "name": "pesos"
+        id: 1,
+        name: 'pesos',
     },
     {
-        "id": 2,
-        "name": "euro"
+        id: 2,
+        name: 'euro',
     },
     {
-        "id": 3,
-        "name": "dolar"
-    }
+        id: 3,
+        name: 'dolar',
+    },
 ];
 coin.push({
     id: 4,
-    name: 'euro'
+    name: 'euro',
 });
 let books = [
     {
         id: 1,
         title: 'El principito',
-    }
+    },
 ];
 books = [1, 2, 3, 4, 5];
-let dateOne = ['2021-09-25', 25];
+const dateOne = ['2021-09-25', 25];
+console.log(dateOne[0], ' fecha');
 let dateTwo;
 dateTwo = ['2021-09-25', 25];
-let dateThree;
-dateThree = ['2021-09-25', 25, true];
+console.log(dateTwo, ' numero');
+const dateThree = ['2021-09-25', 25, true];
 var Colors;
 (function (Colors) {
     Colors[Colors["Red"] = 0] = "Red";
     Colors[Colors["Green"] = 1] = "Green";
     Colors[Colors["Blue"] = 2] = "Blue";
 })(Colors || (Colors = {}));
-let c = Colors.Green;
+const c = Colors.Green;
 console.log(c, ' num 3');
 console.log(Colors[2]);
 var Dia;
@@ -52,7 +53,7 @@ var Dia;
     Dia[Dia["name"] = 4] = "name";
     Dia[Dia["product"] = 5] = "product";
 })(Dia || (Dia = {}));
-let dia = Dia.product;
+const dia = Dia.product;
 console.log(Dia[dia], ' da');
 console.log(Dia[1], 'dia');
 function sumar() {
@@ -69,17 +70,17 @@ function llegada() {
 }
 sumar();
 console.log(`Haz llegado ${llegada()}`);
-let car = {
+const car = {
     make: 'Toyota',
     model: 'Camry',
-    year: 2020
+    year: 2020,
 };
-let animals = {
+const animals = {
     name: 'dog',
     age: 2,
-    status: false
+    status: false,
 };
-let nothing1 = null;
+const nothing1 = null;
 let nothing = null;
 nothing = 'Hi there';
 let notDefined = undefined;
