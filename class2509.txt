@@ -1,0 +1,55 @@
+/**
+ "DOM":
+ * 
+ * El DOM (Document Object Model) es una interfaz de programación para los documentos HTML y XML. 
+ * Representa la estructura del documento como un árbol de nodos, donde cada nodo es una parte del documento 
+ * (como un elemento, atributo o texto). En TypeScript, el DOM se utiliza para manipular y acceder a los elementos 
+ * del documento de manera tipada, lo que permite detectar errores en tiempo de compilación y mejorar la productividad 
+ * del desarrollo.
+ */
+
+Fundamentos de ts
+tipos basicos: 
+1. number: define numeros enteros o de coma flotante, en ts no se diferencia el int del float.
+2. string: representa secuencia de caracteres o textos
+3. boolean: representa 2 posibles caminos "true" o "false".
+4. Array: puede contener valores del mismo tipo. se diferencia del objeto porque mientras que array "[]", el objeto tiene "{}", 
+
+ejemplo:
+
+const coins = [
+{
+    "id": 1,  id: clave, 1: valor
+    "name": "pesos"
+},
+{
+    "id": 2,
+    "name": "euro"
+},
+
+{
+    "id": 3,
+    "name": "dolar"
+}
+// Es un array de objetos
+
+]
+
+
+const aux = number[] = [];
+for (let i = 1, i <= coins.length; i++){
+    aux.push(coins[i].name)
+}
+
+5. any: permite asignar cualquier valor sin restricciones. Se debe usar con precaución, ya que desactiva las comprobaciones de tipo y puede llevar a errores en tiempo de ejecución.
+6.tuple: define un arreglos con valores fijos, donde cada uno tiene un tipo conocido
+7. enum: define un conjunto de constantes con nombre. Se utiliza para representar un conjunto de valores posibles para una variable. Los enums en TypeScript pueden ser numéricos o de cadena.
+8.void: usado para funciones que no retornan ningun valor
+9.undefined: A variable that has been declared but not assigned a value.
+10.null: An assignment value that represents no value or no object.
+
+
+
+
+
+

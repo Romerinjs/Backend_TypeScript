@@ -13,7 +13,9 @@
     "resolveJsonModule": true, //permite la importación de archivos JSON
     "paths": {  //especifica los módulos y sus ubicaciones
       "Modules/": ["src/modules/"] //especifica la ubicación de los módulos
-    }
+    },
+    // Escribir datos dentro del TS
+    "lib": ["es2016", "dom"],
   },
   "lib": ["es2015"],
   "include": ["src/**/*.ts"],
