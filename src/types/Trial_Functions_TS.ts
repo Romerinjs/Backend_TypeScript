@@ -5,13 +5,17 @@
 console.log('Exercise 1');
 const auxNumber: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // 1 agregar al array por medio de la función push el 10, 12, 15, 16 y 17
-auxNumber.push(10, 12, 15, 16, 17);
+auxNumber.push(10);
+auxNumber.push(12);
+auxNumber.push(15);
+auxNumber.push(16);
+auxNumber.push(17);
 console.log('point 1 push');
 console.log(auxNumber, '\n');
 // 2 eliminar el ultimo elemento del array con pop
-auxNumber.pop();
+const pop1 = auxNumber.pop();
 console.log('point 2 pop');
-console.log(auxNumber, '\n');
+console.log(pop1, '\n');
 // 3 encontrar el indice del numero 1, 4 y 7 con indexOf
 const indicao = auxNumber.indexOf(1);
 const indicao2 = auxNumber.indexOf(4);
@@ -36,7 +40,11 @@ console.log('Exercise 2');
 // point 2
 const auxString: string[] = ['1', '2', '3', '4', '5', '6', '7'];
 // 1 agregar al array por medio de push el 10, 11, 12, 13, 14 tipo string
-auxString.push('10', '11', '12', '13', '14');
+auxString.push('10');
+auxString.push('11');
+auxString.push('12');
+auxString.push('13');
+auxString.push('14');
 console.log('point 1 push');
 console.log(auxString, '\n');
 // 2 encontrar el indice de un elemento el 10, 11 y 14 con indexOf
@@ -48,6 +56,7 @@ console.log(index1, indexTwo, index3, '\n');
 //
 console.log('Exercise 3');
 // point 3
+// cambiar al ESLint Trc
 // eslint-disable-next-line @typescript-eslint/no-inferrable-types
 const message: string = 'Welcome to ITP';
 console.log(message);
@@ -97,7 +106,7 @@ const arrayProducts: any[] = [
 console.log(arrayProducts, '\n');
 // 1 vamos a filtrar en una constante donde price sea mayor que 900 por medio de filter y por medio de un for
 const priceP = arrayProducts.filter((product) => product.price > 900);
-for (let i = 0; i < arrayProducts.length; i++) {
+for (let i = 0; i < arrayProducts.length; i++) { // crear una const como array vacio y hacer un push
   if (arrayProducts[i].price > 900) {
     console.log(arrayProducts[i], 'cicle for', '\n');
   }
@@ -134,6 +143,7 @@ const array2: number[] = [6, 7, 8];
 // 1 concatenar el array 1 con array 2 por medio de concat y por medio de push
 const concat1: number[] = array1.concat(array2);
 const concat2 = array1.push(...array2);
+
 console.log('point 1 concat');
 console.log(concat1, '\n');
 console.log(concat2, '\n');
