@@ -25,7 +25,9 @@
       "no-console": "off",
       "@typescript-eslint/no-explicit-any": "off",
       "quotes": ["error", "single"],
-      "@typescript-eslint/no-inferrable-types": "off"
+      "@typescript-eslint/no-inferrable-types": "off",
+      "max-classes-per-file": "off",
+      "no-plusplus": "off"
     }
   }
   

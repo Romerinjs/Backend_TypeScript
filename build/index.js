@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./types/Trial_Functions_TS");
+require("./types/2Trial_TS_Functions");
 //# sourceMappingURL=index.js.map
